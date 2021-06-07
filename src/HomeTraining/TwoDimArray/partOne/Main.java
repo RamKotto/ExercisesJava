@@ -11,6 +11,9 @@ public class Main {
             System.out.println();
         }
 
+        System.out.println(arrOne[2][0]);    // 7
+        System.out.println(arrOne[1][2]);    // 6
+
         // tic tac toe Map
         String[][] arrTwo = {{"X", "X", "X"}, {"X", "X", "X"}, {"X", "X", "X"}};
         for (int i = 0; i < 4; i++) {
