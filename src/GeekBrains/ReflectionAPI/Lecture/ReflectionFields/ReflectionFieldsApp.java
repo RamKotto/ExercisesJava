@@ -1,7 +1,6 @@
 package GeekBrains.ReflectionAPI.Lecture.ReflectionFields;
 
 import java.lang.reflect.Field;
-import java.util.Arrays;
 
 public class ReflectionFieldsApp {
     public static void main(String[] args) throws NoSuchFieldException {
