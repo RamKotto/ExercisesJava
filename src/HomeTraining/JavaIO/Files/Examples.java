@@ -1,4 +1,4 @@
-package HomeTraining.IO.Files;
+package HomeTraining.JavaIO.Files;
 
 import java.io.*;
 
