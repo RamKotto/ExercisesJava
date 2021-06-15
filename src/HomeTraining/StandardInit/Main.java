@@ -22,7 +22,7 @@ public class Main {
         System.out.println("short: " + main.sh);
         System.out.println("long: " + main.l);
         System.out.println("boolean: " + main.bool);
-        System.out.println("char: " + main.ch);
+        System.out.println("char: " + (byte)main.ch);
         System.out.println("float: " + main.fl);
         System.out.println("double: " + main.dbl);
         System.out.println("Инициализация строк по умолчанию: ");
