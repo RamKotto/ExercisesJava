@@ -1,4 +1,4 @@
-package HomeTraining.Multithreading.Interrupt.PartOne;
+package HomeTraining.Multithreading.Interrupt.FinishThread;
 
 public class Main {
     public static void main(String[] args) {

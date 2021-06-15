@@ -1,4 +1,4 @@
-package HomeTraining.Multithreading.Interrupt.PartOne;
+package HomeTraining.Multithreading.Interrupt.FinishThread;
 
 public class MyThread implements Runnable {
 
