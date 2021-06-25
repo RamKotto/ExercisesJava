@@ -1,4 +1,4 @@
-package CodeWars.DuplicateEncoder6kyu;
+package CodeWars.Kyu6.DuplicateEncoder;
 
 /*
 The goal of this exercise is to convert a string to a new string

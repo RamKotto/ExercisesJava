@@ -1,4 +1,4 @@
-package CodeWars.DisemvowelTrolls7kyu;
+package CodeWars.kyu7.DisemvowelTrolls;
 
 /*
 Trolls are attacking your comment section!
