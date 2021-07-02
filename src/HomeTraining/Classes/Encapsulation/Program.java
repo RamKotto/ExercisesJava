@@ -40,7 +40,9 @@ class Person {
     }
 
     public void setAge(int age) {
-        this.age = age;
+        if (age > 0 && age < 110) {
+            this.age = age;
+        }
     }
 
 
