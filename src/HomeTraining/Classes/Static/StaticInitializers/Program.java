@@ -26,6 +26,8 @@ class Person {
     private int id;
     static int counter;
 
+    // Стоит учитывать, что вызов статического инициализатора производится
+    // только перед созданием самого первого объекта класса.
     static {
         counter = 105;
         System.out.println("Static initializer");
