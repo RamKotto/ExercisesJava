@@ -9,7 +9,7 @@ public class DescendingOrder {
     }
 
     public static int sortDesc(final int num) {
-        return strArrayToInt(Arrays.toString(sortedIntArrayToDesc(intToArray(num))));
+        return strArrayToInt(sortedIntArrayToDesc(intToArray(num)));
     }
 
     public static int[] intToArray(int num) {
@@ -39,8 +39,8 @@ public class DescendingOrder {
         return arr;
     }
 
-    public static int strArrayToInt(String str) {
-        return Integer.parseInt(str
+    public static int strArrayToInt(int[] intArray) {
+        return Integer.parseInt(Arrays.toString(intArray)
                 .replace(",", "")
                 .replace(" ", "")
                 .replace("[", "")
