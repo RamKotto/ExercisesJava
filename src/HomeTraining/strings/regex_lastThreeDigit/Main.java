@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 
 public class Main {
     public static void main(String[] args) {
-        String inputString = "36748943_987";;
+        String inputString = "36748943_987";
         String pattern = "\\d{3}$";
 
         Pattern ptrn = Pattern.compile(pattern);
