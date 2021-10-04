@@ -14,7 +14,7 @@ public class Main {
         if(matcher.find()){
             System.out.println("For Masha, with love:" + matcher.group(0));
         }else {
-            System.out.println("Something went wrong. May be because I love Masha...");
+            System.out.println("Something went wrong. Maybe because I love Masha...");
         }
     }
 }
