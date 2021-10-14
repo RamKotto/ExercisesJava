@@ -37,7 +37,7 @@ public class MainApp {
 //        list.stream()
 //                .map(n -> n * 5)
 //                .forEach(System.out::println);
-
+//
 //        list.stream()
 //                .map(n -> {
 //                    StringBuilder sb = new StringBuilder();
@@ -52,8 +52,8 @@ public class MainApp {
 //                .filter(n -> n < 6)
 //                .count());
 
-        List<Integer> randomSequenceList = new ArrayList<>(Arrays.asList(5, 3, 8, 1, 15, 4, 7, 12));
-        System.out.println(randomSequenceList);
+//        List<Integer> randomSequenceList = new ArrayList<>(Arrays.asList(5, 3, 8, 1, 15, 4, 7, 12));
+//        System.out.println(randomSequenceList);
 
 //        randomSequenceList.stream()
 //                .sorted()
@@ -78,51 +78,51 @@ public class MainApp {
 //        Integer res = opt.orElse(10);
 //        opt.orElseThrow(() -> new RuntimeException("Something went wrong!"));
 //        System.out.println(opt.get());
-
-        List<String> strList = new ArrayList<>(Arrays.asList("A", "B", "C", "D", "E"));
-        System.out.println(strList.stream().noneMatch(str -> str.equals("F")));
-        String[] arr = {"A", "B", "C"};
-        Stream<String> arrStream = Arrays.stream(arr);
-        Stream<String> streamBuilder = Stream.of("A", "B", "C");
-    }
-
-    private static void firstExample() {
-        List<Person> persons = new ArrayList<>(Arrays.asList(
-                new Person("Bob1", "Engineer", 45),
-                new Person("Bob2", "Engineer", 37),
-                new Person("Bob3", "Manager", 31),
-                new Person("Bob4", "Manager", 34),
-                new Person("Bob5", "Engineer", 44),
-                new Person("Bob6", "CEO", 50)
-        ));
-        // Составляем список из инженеров:
-        List<Person> engineers = new ArrayList<>();
-        for (Person p : persons) {
-            if (p.position.equals("Engineer")) {
-                engineers.add(p);
-            }
-        }
-        // Сортируем инженеров по возрасту:
-        Collections.sort(engineers, new Comparator<Person>() {
-            @Override
-            public int compare(Person o1, Person o2) {
-                return o1.age - o2.age;
-            }
-        });
-        // Выводим имена инженеров:
-        List<String> engineersNames = new ArrayList<>();
-        for (Person p : engineers) {
-            engineersNames.add(p.name);
-        }
-        System.out.println(engineersNames);
-
-        // Делаем то же самое, при помощи Stream:
-        List<String> engNames = persons.stream()
-                .filter(p -> p.position.equals("Engineer"))
-                .sorted((o1, o2) -> o1.age - o2.age)
-                .map(p -> p.name)
-                .collect(Collectors.toList());
-        System.out.println(engNames);
+//
+//        List<String> strList = new ArrayList<>(Arrays.asList("A", "B", "C", "D", "E"));
+//        System.out.println(strList.stream().noneMatch(str -> str.equals("F")));
+//        String[] arr = {"A", "B", "C"};
+//        Stream<String> arrStream = Arrays.stream(arr);
+//        Stream<String> streamBuilder = Stream.of("A", "B", "C");
+//    }
+//
+//    private static void firstExample() {
+//        List<Person> persons = new ArrayList<>(Arrays.asList(
+//                new Person("Bob1", "Engineer", 45),
+//                new Person("Bob2", "Engineer", 37),
+//                new Person("Bob3", "Manager", 31),
+//                new Person("Bob4", "Manager", 34),
+//                new Person("Bob5", "Engineer", 44),
+//                new Person("Bob6", "CEO", 50)
+//        ));
+//        // Составляем список из инженеров:
+//        List<Person> engineers = new ArrayList<>();
+//        for (Person p : persons) {
+//            if (p.position.equals("Engineer")) {
+//                engineers.add(p);
+//            }
+//        }
+//        // Сортируем инженеров по возрасту:
+//        Collections.sort(engineers, new Comparator<Person>() {
+//            @Override
+//            public int compare(Person o1, Person o2) {
+//                return o1.age - o2.age;
+//            }
+//        });
+//        // Выводим имена инженеров:
+//        List<String> engineersNames = new ArrayList<>();
+//        for (Person p : engineers) {
+//            engineersNames.add(p.name);
+//        }
+//        System.out.println(engineersNames);
+//
+//        // Делаем то же самое, при помощи Stream:
+//        List<String> engNames = persons.stream()
+//                .filter(p -> p.position.equals("Engineer"))
+//                .sorted((o1, o2) -> o1.age - o2.age)
+//                .map(p -> p.name)
+//                .collect(Collectors.toList());
+//        System.out.println(engNames);
     }
 }
 
