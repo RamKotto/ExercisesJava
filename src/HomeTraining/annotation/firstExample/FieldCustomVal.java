@@ -9,5 +9,5 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.FIELD)
 public @interface FieldCustomVal {
-    public String value() default "Hello there";
+    String value() default "Hello there";
 }
