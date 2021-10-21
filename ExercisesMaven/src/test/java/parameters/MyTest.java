@@ -24,11 +24,16 @@ public class MyTest {
 
     // threadPoolSize - количство потоков, priority - приоритетночть (чем меньше число, тем выше приоритет)
 //    @Test ( expectedExceptions = { IOException.class, NullPointerException.class } )
-    @Test(dataProvider = "provider", threadPoolSize = 10, priority = 1)
+    @Test(enabled = true, dataProvider = "provider", threadPoolSize = 10, priority = 1)
 //    @Parameters("myName")                   // for xml
     public void myTestProgram(String myName) {
         for (int i = 0; i < 1000; i++) {
             System.out.println(myName);
         }
+    }
+
+    @Test(dependsOnMethods = "myTestProgram")
+    public void secondTest() {
+        System.out.println("Hello World!");
     }
 }
