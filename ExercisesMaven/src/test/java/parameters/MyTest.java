@@ -1,15 +1,9 @@
 package parameters;
 
-import com.google.errorprone.annotations.CompileTimeConstant;
-import org.testng.Assert;
-import org.testng.IReporter;
-import org.testng.ISuite;
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-import org.testng.xml.XmlSuite;
 
-import java.util.List;
+import java.io.BufferedReader;
 
 public class MyTest {
 
@@ -34,6 +28,10 @@ public class MyTest {
 
     @Test(dependsOnMethods = "myTestProgram")
     public void secondTest() {
+        System.out.println("Hello World!");
+    }
+
+    public void myMethod(int a, String[]... srt) {
         System.out.println("Hello World!");
     }
 }
