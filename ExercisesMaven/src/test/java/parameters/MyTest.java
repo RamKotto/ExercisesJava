@@ -10,9 +10,9 @@ public class MyTest {
     @DataProvider(parallel = true)   // параллель для многопоточности
     public Object[][] provider() {
         return new Object[][] {
-                {"sss"},
-                {"aaaaaaaaa"},
-                {"zzzzzzzzzzzzzzzzzzzzzzzz"}
+                {"Masha"},
+                {"Dima"},
+                {"Danya"}
         };
     }
 
