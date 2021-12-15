@@ -15,7 +15,6 @@ public class MyTest {
                 {"Danya"}
         };
     }
-
     // threadPoolSize - количство потоков, priority - приоритетночть (чем меньше число, тем выше приоритет)
 //    @Test ( expectedExceptions = { IOException.class, NullPointerException.class } )
     @Test(enabled = true, dataProvider = "provider", threadPoolSize = 10, priority = 1)
