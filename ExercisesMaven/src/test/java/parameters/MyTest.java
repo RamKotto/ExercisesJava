@@ -10,9 +10,9 @@ public class MyTest {
     @DataProvider(parallel = true)   // параллель для многопоточности
     public Object[][] provider() {
         return new Object[][] {
-                {"Masha"},
-                {"Dima"},
-                {"Danya"}
+                {"sss"},
+                {"aaaaaaaaa"},
+                {"zzzzzzzzzzzzzzzzzzzzzzzz"}
         };
     }
     // threadPoolSize - количство потоков, priority - приоритетночть (чем меньше число, тем выше приоритет)
