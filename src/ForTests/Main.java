@@ -11,5 +11,7 @@ public class Main {
         ((Cat) cat).sayHello((Dog) dog, "Barsik");
 
         cat.makeVoice();
+        cat.makeVoice();
+        cat.makeVoice();
     }
 }
