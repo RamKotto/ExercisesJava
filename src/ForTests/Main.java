@@ -9,5 +9,7 @@ public class Main {
         dog.makeVoice();
         cat.makeVoice();
         ((Cat) cat).sayHello((Dog) dog, "Barsik");
+
+        cat.makeVoice();
     }
 }
