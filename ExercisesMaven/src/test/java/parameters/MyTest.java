@@ -3,8 +3,6 @@ package parameters;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import java.io.BufferedReader;
-
 public class MyTest {
 
     @DataProvider(parallel = true)   // параллель для многопоточности
