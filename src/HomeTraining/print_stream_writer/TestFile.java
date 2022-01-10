@@ -1,4 +1,4 @@
-package ForTests;
+package HomeTraining.print_stream_writer;
 
 import java.io.FileOutputStream;
 import java.io.PrintStream;
